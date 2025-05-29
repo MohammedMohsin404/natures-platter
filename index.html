@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en"  data-theme="naturesPlatterTheme">
+<html lang="en" data-theme="naturesPlatterTheme">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natures Platter</title>
-<!-- Daisy UI CDN -->
+    <!-- Daisy UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <style type="text/tailwindcss">
-      @theme {
+    <style type="text/tailwindcss">
+        @theme {
         --color-natural-primary: #179800;
         --color-natural-secondary: #EFEBE3;
         --color-natural-text: #111111;
@@ -17,10 +17,63 @@
     </style>
 </head>
 
-<body>
-    <header>
-        <button class="btn text-natural-primary "> Danger</button>
-        <h3 class="text-natural- bg-natural-primary">Mo</h3>
+<body class="container mx-auto space-x-36">
+    <header class="bg-natural-secondary">
+
+
+        <nav>
+            <div class="navbar bg-base-100 ">
+                <div class="navbar-start">
+
+                    <a class="btn btn-ghost w-36"><img src="./assets/logo-header.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden md:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact us</a></li>
+                            <a class="btn btn-square  rounded-md mr-1 text-natural-primary  hover:bg-white "><img
+                                    src="./assets/Search.png" alt=""></a>
+                            <a class="btn btn-square  rounded-md mr-1 text-natural-primary  hover:bg-white "><img
+                                    src="./assets/cart.png" alt=""></a>
+                            <a
+                                class="btn btn-outline border-natural-primary rounded-md mr-3 text-natural-primary hover:bg-natural-primary hover:text-white ">Login</a>
+                            <a
+                                class=" btn bg-natural-primary rounded-md text-white hover:bg-transparent hover:text-natural-primary border-natural-primary">Register</a>
+                        </ul>
+                        <div class="hidden md:block">
+                            <a class="btn btn-square  rounded-md  text-natural-primary  hover:bg-white "><img
+                                    src="./assets/Search.png" alt=""></a>
+                            <a class="btn btn-square  rounded-md text-natural-primary  hover:bg-white "><img
+                                    src="./assets/cart.png" alt=""></a>
+                            <a
+                                class="btn btn-outline border-natural-primary rounded-md mr-3 text-natural-primary hover:bg-natural-primary hover:text-white ">Login</a>
+                            <a
+                                class=" btn bg-natural-primary rounded-md text-white hover:bg-transparent hover:text-natural-primary border-natural-primary">Register</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
     </header>
     <main></main>
     <footer></footer>
