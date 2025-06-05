@@ -2,12 +2,19 @@
 <html lang="en" data-theme="naturesPlatterTheme">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natures Platter</title>
     <!-- Daisy UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+
+    <script src="https://kit.fontawesome.com/7462a6c37b.js" crossorigin="anonymous"></script>
+
+
     <style type="text/tailwindcss">
         @theme {
         --color-natural-primary: #179800;
@@ -15,6 +22,7 @@
         --color-natural-text: #111111;
       }
     </style>
+
 </head>
 
 <body>
@@ -27,9 +35,10 @@
             </div>
             <div class="navbar-center hidden md:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a>Product</a></li>
+                    <li><a>Prooduct</a></li>
                     <li><a>Services</a></li>
                     <li><a>Contact us</a></li>
+
 
                 </ul>
             </div>
@@ -43,10 +52,11 @@
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>Product</a></li>
+                        class="menu items-center justify-center  space-y-2 menu-sm dropdown-content bg-base-100 rounded-box ml-[-150px] z-1 mt-3 w-52 p-2 shadow">
+                        <li class="  "><a >Product</a></li>
                         <li><a>Services</a></li>
                         <li><a>Contact us</a></li>
+
                         <a class="btn btn-square  rounded-md mr-1 text-natural-primary  hover:bg-white "><img
                                 src="./assets/Search.png" alt=""></a>
                         <a class="btn btn-square  rounded-md mr-1 text-natural-primary  hover:bg-white "><img
@@ -74,7 +84,7 @@
 
         <header class="flex  flex-col justify-center  mt-20">
             <div class="text-center ">
-                <h1 class="text-5xl text-natural-text">Freshness <span class="text-natural-primary"> You Can <br>
+                <h1 class="text-2xl md:text-3xl lg:text-5xl text-natural-text">Freshness <span class="text-natural-primary"> You Can <br>
                         Count </span> On, Prices You’ll Love!</h1>
                 <p class="text-base text-natural-text mt-8 ">Shop your daily essentials at unbeatable prices. From fresh
                     produce to pantry <br> staples, we’ve got you covered every day!</p>
@@ -87,7 +97,7 @@
     </div>
 
 
-    <main>
+    <main class="">
         <!-- Services -->
 
         <div class="container mx-auto mt-40">
@@ -383,34 +393,77 @@
         <div class="">
             <div class="container mx-auto mt-40 pb-40 ">
                 <h2 class=" text-4xl  text-natural-primary">Arrival & Offers</h2>
-                <div class="mt-12 grid grid-cols-5 space-x-4"> 
-                    <div class="bg-[#115414] col-span-3 flex justify-between p-8 rounded-xl">
-                        <div class="space-y-4 space-x-4" >
+                <div class="mt-12 flex flex-col lg:flex-row flex-wrap space-y-4 justify-around    ">
+                    <div class="bg-[#115414] basis-7/12 flex flex-col md:flex-row md:justify-between justify-center  p-8 rounded-xl">
+                        <div class="space-y-4 mx-auto md:mx-0  ">
                             <img src="./assets/dawat-logo.png" alt="">
-                            <div class="bg-[#63B76D] text-white text-2xl rounded-xl w-90 p-5 text-center  " >Cool Exotic Dishes</div>
-                            <h2 class="text-5xl text-white ">UP to <span class="font-bold">20% OFF</span></h2>
+                            <div class="bg-[#63B76D] text-white text-2xl rounded-xl  p-5 text-center  ">Cool Exotic
+                                Dishes</div>
+                            <h2 class="md:text-4xl text-2xl text-white text-center ">UP to <span class="font-bold">20% OFF</span></h2>
                         </div>
-                        <div><img src="./assets/dawat-mock-up.png" alt=""></div>
+                        <div class="mt-4 mx-auto md:mx-0"><img src="./assets/dawat-mock-up.png" alt=""></div>
                     </div>
-                    
-              
-                    <div class="bg-[#102861] col-span-2 flex justify-between p-8 rounded-xl">
-                        <div class="space-y-4 " >
+
+
+                    <div class="bg-[#102861] basis-4/12 flex flex-col md:flex-row justify-between p-8 rounded-xl">
+                        <div class="space-y-4 mx-auto md:mx-0">
                             <img src="./assets/india-gate-logo.png" alt="">
-                            <div class="bg-[#2A4D97] text-white text-2xl rounded-xl w-80 p-5 text-center  " >World’s No.1 Rice</div>
-                            <h2 class="text-4xl text-white ">UP to <span class="font-bold">40% OFF</span></h2>
+                            <div class="bg-[#2A4D97] text-white text-2xl rounded-xl  p-5 text-center  ">World’s No.1
+                                Rice</div>
+                            <h2 class="md:text-3xl text-2xl text-white text-center  ">UP to <span class="font-bold">40% OFF</span></h2>
                         </div>
-                        <div><img src="./assets/india-gate-mock-up.png" alt=""></div>
+                        <div class="mx-auto md:mx-0"><img src="./assets/india-gate-mock-up.png" alt=""></div>
                     </div>
-                    
-              
+
+
                 </div>
             </div>
 
-
+            <!-- Newsletter -->
+            <!-- <div
+                class="z-1 mb-[-225px] container mx-auto rounded-xl bg-natural-secondary flex px-24 py-14 justify-around items-center">
+                <div><img src="./assets/vegetable-busket.png" alt=""></div>
+                <div class="space-y-6">
+                    <h3 class="text-4xl text-natural-text">Get Grocery News!</h3>
+                    <p class="text-base text-natural-text"> Exclusive training tips, ticks, product deals and more.</p>
+                    <input type="text" name="email" id="email" placeholder="Enter Email..."
+                        class=" text-natural-text input border-0 bg-white p-4">
+                    <button class="btn bg-natural-primary text-white">Subscribe</button>
+                </div>
+            </div> -->
 
     </main>
-    <footer></footer>
+    <footer class=" -z-0 bg-natural-primary py-60 ">
+        <div class="container mx-auto flex flex-wrap justify-around">
+            <div class="space-y-8 flex flex-col justify-center">
+                <img class="w-50" src="./assets/logo-footer.png" alt="">
+                <p class="text-natural-text text-white text-xl">Discover a world of treats, toys, and <br> essentials
+                    handpicked for your furry <br> friends</p>
+            </div>
+            <div>
+                <div class=" mt-8 flex flex-col space-y-6 px-1 text-white">
+                    <div class=""><a>Product</a></div>
+                    <div><a>Services</a></div>
+                    <div><a>Contact us</a></div>
+
+                </div>
+            </div>
+            <div class="items-center flex flex-col ">
+                <p class="text-white menu text-base font-bold  ml-5">Follow Us</p>
+                <div class="flex menu md:flex-row space-x-4 space-y-4  text-white   text-2xl">
+                    <div class=""><a href="https://www.facebook.com/" target="_blank"> <i
+                                class="fa-brands fa-facebook-f"></i></a></div>
+                    <div><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
 
 
